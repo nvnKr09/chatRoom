@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- font Awesome css-->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.0/css/all.css"
+    />
+  </head>
+  <body>
+    <section class="root">
+      <div class="login-page">
+      <form class="login-card">
+        <h1>Enter Username</h1>
+        <div>
+          <!-- <label for="username-input"> Enter Username </label> -->
+          <input type="text" id="username-input" />
+        </div>
+        <div class="alert-box">
+          <!-- Alert using js -->
+        </div>
+        <button type="submit" id="join-chat">Join Chatroom</button>
+      </form>
+    </div>
+      <div class="chatroom-container">
+        <div class="chatroom-header">Welcome to Chat Room</div>
+        <div class="message-container">
+          <!-- js -->
+        </div>
+        <form class="input-container">
+          <button id="exitButton">Exit</button>
+          <input
+            type="text"
+            id="message-input"
+            placeholder="Type a messsage..."
+            autocomplete="off"
+          />
+          <button id="sendButton">
+            <i class="fa-solid fa-paper-plane-top" style="color: #fff"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- linking js -->
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"
+      integrity="sha384-mZLF4UVrpi/QTWPA7BjNPEnkIfRFn4ZEO3Qt/HFklTJBj/gBOV8G3HcKn4NfQblz"
+      crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
